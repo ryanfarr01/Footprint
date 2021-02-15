@@ -19,7 +19,7 @@ See our presentation [here](https://docs.google.com/presentation/d/1-N0vEQaEX5OG
 
 **Start Server**:
 1. From the commandline, navigate to the \"footprint_server\" folder
-2. Start the server with `python manage.py`
+2. Start the server with `python manage.py runserver`
 
 
 ## Chrome Extension
