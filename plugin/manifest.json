@@ -1,0 +1,53 @@
+{
+  "manifest_version": 2,
+  "name": "Footprint",
+  "description": "Climate conscious online shopping",
+  "version": "1",
+  "author": "Team Rising Tide",
+  "browser_action": {
+    "default_title": "Footprint",
+    "default_icon": "labels/greenLogo.png",
+    "default_popup": "loggedOut.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.com/*", 
+        "http://www.amazon.com/*"
+      ],
+      "js": [
+        "content.js",
+        "jquery.min.js"
+      ],
+      "css": [
+        "css/footprint.css"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "tab",
+    "identity",
+    "identity.email",
+    "cookies",
+    "css/*",
+    "*://*/*"
+  ],
+  "web_accessible_resources": [
+    "labels/*",
+    "css/*"
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwOMhWRApFhDYqcgcasK4FBscb5SlJbS8JHHow2HC8X7yOh8uyC8r/ZB9Iy8H0Tb2ytUv6jQcURR51lefhP94Yjsli33tRpMnuLO4vfzg00SDPPbGB7at0HcRCNTaxTyhpMncXxbcuqpyK4sszUrD5fusmvQLTeqLwpU7wEgm1swjIBoW9cH2U2z4lgvHA+gDV7rU3QT6vMpujmaTePAcRN8a3V18j6RClUHe+uRDfUyJjnyXeX8/INYW6a0h71YdWuKY4m6otViVOYUYxSvIj2mf7D1CW0uYLzw+bN3Lgnqxt6QzcfllCJ/mJ47pvNlyDbv5XBJZQcRHsy/cBUElnwIDAQAB",
+  "oauth2": {
+    "client_id": "177787997855-sposrkkqa8uth9bh6tl0tv544unh58rm.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile",
+      "https://www.googleapis.com/auth/plus.me"
+    ]
+  }
+}

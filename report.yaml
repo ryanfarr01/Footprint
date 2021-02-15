@@ -1,0 +1,39 @@
+company:
+  name: VaynerMedia
+  logo: buildboard_imgs/vm-OG.png
+product_hmw: How might we develop a system that monitors changes in global shoreline and/or other ongoing effects of global warming?
+product_narrative: |
+  When you shop online there are a number of things you think about before purchasing an item: price, quality, the time it will take to
+  arrive, etc. But very few people consider the impact this purchase has on the environment -- the product's carbon footprint. 
+  We're building a browser application that allows you to compare products based on their carbon footprint while shopping online and gives
+  you an opportunity to offset the carbon cost of your purchase with a carbon offset.
+team:
+  picture: buildboard_imgs/team.jpg
+  roster:
+  - name: Ryan Farr
+    email: rlf238@cornell.edu
+    picture: buildboard_imgs/Ryan.PNG
+    program: CS
+  - name: Campbell Weaver
+    email: ccw93@cornell.edu
+    picture: buildboard_imgs/campbell.PNG
+    program: CS
+  - name: Wen Guo
+    email: wg264@cornell.edu
+    picture: buildboard_imgs/Wen.jpg
+    program: MBA
+  - name: Maximilian Kuester
+    email: mnk54@cornell.edu
+    picture: buildboard_imgs/headshot.jpg
+    program: ORIE
+assets:
+- title: Sprint 1
+  url: https://docs.google.com/presentation/d/1Bgyauju-PneVbCqaZ1RdpUps3oN0dlcLKIPWk-RsAk0/edit?usp=sharing
+- title: Value Creation Analysis and Peer Review
+  url: https://docs.google.com/presentation/d/1C6kBecOUUGZXNlAk7P9SDQ1GSIJVlqpImhzpPwTnFiI/edit?usp=sharing
+- title: Sprint 2
+  url: https://docs.google.com/presentation/d/1Z_gAz8nmT8EW7HGGysBKjFxnrF442LkJWbN_bfbm4M8/edit?usp=sharing
+- title: Sprint 3
+  url: https://docs.google.com/presentation/d/12XZZT9jdGKtv2_3ZWi67TvS9ZkYLdwvDtybgMkYcCYw/edit?usp=sharing
+- title: Final Presentation
+  url: https://docs.google.com/presentation/d/1-N0vEQaEX5OGSLSOVxM7-UzhX81H_mAaASMp_EDDry4/edit?usp=sharing
