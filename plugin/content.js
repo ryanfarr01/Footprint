@@ -19,6 +19,8 @@ var pageType = null;
 // console.log(document.getElementById("productTitle") != null);
 if (window.location.pathname.startsWith("/b") || 
   window.location.pathname.startsWith("/l") ||
+  window.location.pathname.startsWith("/alm/") ||
+  window.location.pathname.startsWith("/s") ||
   window.location.pathname.startsWith("/AmazonFresh/b/") ||
   window.location.pathname.startsWith("/gp/buy/fresh-byg/")) {
   console.log("Browsing page");
@@ -52,7 +54,7 @@ function browsingPage() {
   var res = scanBrowsingPage();
   var product_names = res['data'];
   product_divs_names = res['dict'];
-  // console.log(product_names);
+  console.log(product_names);
 
   var offset = 0;
   let batch_size = 10
@@ -78,8 +80,9 @@ function browsingPage() {
           category = response.items[r]['category'];
           sub_category = response.items[r]['sub_category'];
 
-          // console.log(product_name, product_score);
+          console.log(product_name, product_score);
           if (product_divs_names[product_name] != null) {
+            console.log("Labelling product " + product_name + " with response " + response.items[r]);
             labelItem(product_divs_names[product_name]["div"], response.items[r]);
           loadedScores = true;
           }
@@ -105,16 +108,14 @@ function wait(ms) {
 // names: ["GoGo SqueeZ Organic Applesauce...", ""...]
 // divs: [html_containing_product1, html...]
 function scanBrowsingPage() {
-  // var product_divs = document.getElementsByClassName("a-carousel-card");
-
   var product_divs = document.getElementsByClassName("a-box-group standard-kepler-widget-product p13n-asin");
-  // console.log(product_divs);
+  console.log(product_divs);
   var product_names = [];
   product_divs_names = {}
   for (i in product_divs) {
     if (product_divs[i] instanceof HTMLElement) {
       if (product_divs[i].querySelector("a.a-link-normal[title][href]") != null) {
-        // console.log({"name": product_divs[i].querySelector("a.a-link-normal[title][href]")});
+        console.log({"name": product_divs[i].querySelector("a.a-link-normal[title][href]")});
         var name = product_divs[i].querySelector("a.a-link-normal[title][href]").title;
         product_names.push({"name": product_divs[i].querySelector("a.a-link-normal[title][href]").title});
         product_divs_names[name] = {"div": product_divs[i]};
