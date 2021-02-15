@@ -26,5 +26,5 @@ See our presentation [here](https://docs.google.com/presentation/d/1-N0vEQaEX5OG
 1. Open Google Chrome
 2. Go to your Extensions
 3. Click "Load Unpacked"
-4. In the opened file explorer, navigate to Footprint/plugin and open the "plugin 2" folder
+4. In the opened file explorer, navigate to the Footprint folder and open "plugin"
 5. Verify that Footprint now shows up as an extension
